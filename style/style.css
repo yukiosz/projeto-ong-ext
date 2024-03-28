@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "alte";
+  src: url(../fonts/AlteHaasGroteskRegular.ttf);
+}
+
+* {
+  background-color: #dddddd;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: rgb(85, 116, 79);
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo-header {
+  width: 10rem;
+  height: 60px;
+  background-color: rgb(85, 116, 79);
+}
+
+.div-logo {
+  height: 60px;
+}
+
+.links-header {
+  background-color: rgb(85, 116, 79);
+  margin-right: 30px;
+  height: 100%;
+}
+
+.links-header a{
+  background-color: rgb(85, 116, 79);
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: "alte";
+  font-size: 1.3vh;
+  font-weight: 600;
+  padding: 0px 10px 0px 10px;
+  text-transform: uppercase;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  touch-action: manipulation;
+  overflow: hidden;
+}
+
+.links-header a:hover,
+.links-header a:focus { 
+  background-color: rgb(60, 80, 55);
+  color: #ffffff;
+}
+
+.links-header a:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
