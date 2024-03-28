@@ -1,19 +1,35 @@
+:root {
+  --font-lightcolor: #ffffff;
+  --font-darkcolor: #0e0e0e;
+  --accent-color: #5FC86D;
+  --main-color: #5C895F;
+  --light-color: #D9F9D9;
+  --highlight-color: #284775;
+  --lines-color: #2b4d2f;
+}
+
 @font-face {
   font-family: "alte";
   src: url(../fonts/AlteHaasGroteskRegular.ttf);
 }
 
-* {
-  background-color: #dddddd;
+@font-face {
+  font-family: 'gogh';
+  src: url(../fonts/gogh.woff);
 }
 
-body {
+@font-face {
+  font-family: 'dmsans';
+  src: url(../fonts/dmsans.ttf);
+}
+
+* {
   margin: 0;
   padding: 0;
 }
 
 nav {
-  background-color: rgb(85, 116, 79);
+  background-color: var(--main-color);
 }
 
 .navbar {
@@ -24,25 +40,28 @@ nav {
   position: relative;
 }
 
-.logo-header {
+.logo-nav {
   width: 10rem;
-  height: 60px;
-  background-color: rgb(85, 116, 79);
+  height: 100%;
+  transition: 0.3s;
+}
+
+.logo-nav:hover {
+  transform: scale(1.05);
+  transform-origin: center;
 }
 
 .div-logo {
   height: 60px;
 }
 
-.links-header {
-  background-color: rgb(85, 116, 79);
+.links-nav {
   margin-right: 30px;
   height: 100%;
 }
 
-.links-header a{
-  background-color: rgb(85, 116, 79);
-  color: whitesmoke;
+.links-nav a {
+  color: var(--font-lightcolor);
   text-decoration: none;
   font-family: "alte";
   font-size: 1.3vh;
@@ -52,18 +71,123 @@ nav {
   height: 100%;
   align-items: center;
   text-align: center;
-  touch-action: manipulation;
-  overflow: hidden;
+  transition: 0.3s;
 }
 
-.links-header a:hover,
-.links-header a:focus { 
-  background-color: rgb(60, 80, 55);
-  color: #ffffff;
+.links-nav a:hover {
+  font-size: 1.4vh;
 }
 
-.links-header a:disabled { 
+.links-nav a:disabled {
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
+}
+
+.top {
+  height: 400px;
+  background-image: url(../img/pequenosguerreiros1.jpg);
+  border-bottom: solid var(--lines-color) 10px;
+  background-size: cover;
+}
+
+.img-title {
+  position: absolute;
+}
+
+.body-title {
+  font-family: 'gogh';
+  font-display: swap;
+  font-size: 30pt;
+  font-weight: bolder;
+  text-shadow: 1px 3px 10px #29292985;
+  color: var(--font-lightcolor);
+  padding: 20px 0px 10px 20px;
+  position: relative;
+
+}
+
+.body-dilema {
+  font-family: 'dmsans';
+  font-size: 14pt;
+  font-weight: bold;
+  color: var(--font-lightcolor);
+  padding: 20px 0px 10px 20px;
+  position: relative;
+}
+
+.body-button-saibamais {
+  height: 50px;
+  width: 150px;
+  margin: 20px 0px 0px 20px;
+  color: var(--font-lightcolor);
+  background-color: var(--font-lightcolor);
+  border: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "gogh";
+  font-size: 13pt;
+  font-weight: bold;
+  border-radius: 18px;
+  background: linear-gradient(145deg, var(--main-color), var(--accent-color));
+  box-shadow: 10px 10px 10px 0px #00000048;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-block;
+  position: relative;
+}
+
+.body-button-saibamais:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: all 0.3s;
+}
+
+.body-button-saibamais:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.body-button-saibamais:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  align-items: flex-start;
+}
+
+.card-missao, .card-visao, .card-valores {
+  height: 425px;
+  width: 400px;
+  border-radius: 32px;
+  background: linear-gradient(145deg, #ffffff, #dddddd);
+  box-shadow:  12px 12px 24px #d0d0d0,
+               -12px -12px 24px #ffffff;
+  margin: 50px 0px 0px 0px;
+}
+
+.card-missao h2, .card-valores h2, .card-visao h2 {
+  font-family: 'gogh';
+  font-size: 20pt;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.card-missao p, .card-valores p, .card-visao p {
+  font-family: 'dmsans';
+  font-size: 13pt;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
 }
