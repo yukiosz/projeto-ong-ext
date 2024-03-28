@@ -163,16 +163,26 @@ nav {
   justify-content: center;
   gap: 100px;
   align-items: flex-start;
+  border-bottom: solid var(--lines-color) 10px;
+  background-size: cover;
 }
 
 .card-missao, .card-visao, .card-valores {
   height: 425px;
   width: 400px;
   border-radius: 32px;
-  background: linear-gradient(145deg, #ffffff, #dddddd);
+  background: linear-gradient(145deg, #f5f5f5, #e4e4e4);
   box-shadow:  12px 12px 24px #d0d0d0,
                -12px -12px 24px #ffffff;
-  margin: 50px 0px 0px 0px;
+  margin: 50px 0px 50px 0px;
+  transition: all 0.5s;
+}
+
+.card-missao:hover, .card-visao:hover, .card-valores:hover {
+  transform: scale(1.05);
+  transform-origin: center;
+  box-shadow:  12px 12px 24px #838383b0,
+  -12px -12px 24px #ddddddab;
 }
 
 .card-missao h2, .card-valores h2, .card-visao h2 {
@@ -189,5 +199,15 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  flex-wrap: wrap;
+}
+
+.ul-valores {
+  font-family: 'dmsans';
+  font-size: 13pt;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 20px 40px;
   flex-wrap: wrap;
 }
