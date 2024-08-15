@@ -1,0 +1,385 @@
+:root {
+  --font-lightcolor: #ffffff;
+  --font-activecolor: #9fdda3;
+  --font-darkcolor: #0e0e0e;
+  --accent-color: hsl(128, 49%, 58%);
+  --main-color: #5C895F;
+  --light-color: #D9F9D9;
+  --highlight-color: #284775;
+  --lines-color: #2b4d2f;
+}
+
+@font-face {
+  font-family: "alte";
+  src: url(../fonts/AlteHaasGroteskRegular.ttf);
+}
+
+@font-face {
+  font-family: 'gogh';
+  src: url(../fonts/gogh.woff);
+}
+
+@font-face {
+  font-family: 'dmsans';
+  src: url(../fonts/dmsans.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  background-color: var(--main-color);
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo-nav {
+  width: 10rem;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.logo-nav:hover {
+  transform: scale(0.95);
+  transform-origin: center;
+}
+
+.div-logo {
+  height: 3.75rem;
+}
+
+.links-nav {
+  margin-right: 1.875rem;
+  height: 100%;
+}
+
+.links-nav a {
+  color: var(--font-lightcolor);
+  text-decoration: none;
+  font-family: "dmsans";
+  font-size: 1.3vh;
+  font-weight: 600;
+  letter-spacing: .15vh;
+  padding: 0rem 0.625rem 0rem 0.625rem;
+  text-transform: uppercase;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.links-nav a:hover {
+  font-size: 1.2vh;
+  color: var(--font-activecolor)
+}
+
+.links-nav a:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.top {
+  height: 25rem;
+  background-image: url(../img/pequenosguerreiros1.jpg);
+  border-bottom: solid var(--lines-color) 0.625rem;
+  background-size: cover;
+}
+
+.img-title {
+  position: absolute;
+}
+
+.body-title {
+  font-family: 'gogh';
+  font-display: swap;
+  font-size: 4vh;
+  font-weight: bolder;
+  text-shadow: 0.063rem 0.188rem 0.625rem #29292985;
+  color: var(--font-lightcolor);
+  padding: 1.25rem 0rem 0.625rem 1.25rem;
+}
+
+.body-dilema {
+  font-family: 'dmsans';
+  font-size: 1.867vh;
+  font-weight: bold;
+  color: var(--font-lightcolor);
+  padding: 1.25rem 0rem 0.625rem 1.25rem;
+}
+
+.body-button-saibamais {
+  height: 3.125rem;
+  width: 9.375rem;
+  margin: 1.25rem 0rem 0rem 1.25rem;
+  color: var(--font-lightcolor);
+  border: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "gogh";
+  font-size: 1.733vh;
+  font-weight: bold;
+  border-radius: 1.125rem;
+  background: linear-gradient(145deg, var(--main-color), var(--accent-color));
+  box-shadow: 0.625rem 0.625rem 0.625rem 0rem #00000048;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-block;
+  position: relative;
+}
+
+.body-button-saibamais:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0.875rem;
+  right: -1.25rem;
+  transition: all 0.3s;
+}
+
+.body-button-saibamais:hover {
+  padding-right: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.body-button-saibamais:hover:after {
+  opacity: 1;
+  right: 0.625rem;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 5rem;
+  align-items: flex-start;
+  border-bottom: solid var(--lines-color) 0.625rem;
+  background-size: cover;
+}
+
+.card-missao, .card-visao, .card-valores {
+  min-height: 26.563rem;
+  max-width: 25rem;
+  border-radius: 2rem;
+  background: linear-gradient(145deg, #f5f5f5, #e4e4e4);
+  box-shadow: 0.75rem 0.75rem 1.5rem #d0d0d0,
+    -0.75rem -0.75rem 1.5rem #ffffff;
+  margin: 3.125rem 0rem 3.125rem 0rem;
+  transition: all 0.5s;
+}
+
+.card-missao:hover, .card-visao:hover, .card-valores:hover {
+  transform: scale(1.05);
+  transform-origin: center;
+  box-shadow: 0.75rem 0.75rem 1.5rem #838383b0,
+    -0.75rem -0.75rem 1.5rem #ddddddab;
+}
+
+.card-missao h2, .card-valores h2, .card-visao h2 {
+  font-family: 'gogh';
+  font-size: 2vh;
+  text-align: center;
+  padding-top: 1.875rem;
+}
+
+.card-missao p, .card-valores p, .card-visao p {
+  font-family: 'dmsans';
+  font-size: 1.8vh;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.ul-valores {
+  font-family: 'dmsans';
+  font-size: 1.733vh;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+  flex-wrap: wrap;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* Garante que o texto dentro do contêiner também esteja centralizado */
+  padding: 3rem;
+  background-image: url(../img/pequenosguerreiros3.jpg);
+
+}
+
+.about h1 {
+  text-align: center;
+  font-family: 'gogh';
+}
+
+#hr-cima {
+  margin-top: 1.2rem;
+}
+
+.about h1 {
+  color: var(--font-lightcolor);
+}
+
+.about hr {
+  width: 50%;
+  /* Ajuste a largura conforme necessário */
+  height: 0.125rem;
+  border: none;
+  background-color: var(--font-lightcolor);
+  /* Cor do fundo do hr */
+  border-top: 0.063rem solid var(--font-lightcolor);
+  /* Cor da borda superior do hr */
+  margin: 1rem auto;
+  /* Margem superior e inferior, e margem automática para centralizar horizontalmente */
+}
+
+.about p {
+  width: 75%;
+  color: var(--font-lightcolor);
+  font-size: 2vh;
+  font-family: 'dmsans';
+  margin: 1rem;
+}
+
+.buttonAbout {
+  width: 12.5rem;
+  height: 2.5rem;
+  border-radius: 0.563rem;
+  border: none;
+  background: linear-gradient(145deg, var(--main-color), var(--accent-color));
+  color: #ffffff;
+  box-shadow: 0.313rem 0.313rem 0.625rem 0rem #00000048;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  margin: 1.25rem;
+  font-family: 'gogh';
+  font-size: 1.6vh;
+  transition: all 0.3s;
+}
+
+.buttonAbout:hover {
+  font-size: 1.7vh;
+  scale: 1.03;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.container {
+  max-width: 73.125rem;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 4rem 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0rem 1rem;
+}
+
+.footer-col h4 {
+  font-size: 1.125rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 2.2rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.625rem;
+  background-color: var(--accent-color);
+  height: 0.125rem;
+  box-sizing: border-box;
+  width: 3.125rem;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+.footer-col ul li a {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 0.5rem;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 0.625rem 0.625rem 0;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 47.938rem) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media(max-width: 35.875rem) {
+  .footer-col {
+    width: 100%;
+  }
+}
