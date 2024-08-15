@@ -1,0 +1,121 @@
+.top {
+    height: 57rem;
+    background-image: url(../img/pequenosguerreiros1.jpg);
+    border-bottom: solid var(--lines-color) 0.625rem;
+    background-size: cover;
+}
+
+.body-title {
+    font-family: 'gogh';
+    font-display: swap;
+    font-size: 10vh;
+    font-weight: bolder;
+    text-shadow: 0.063rem 0.188rem 0.625rem #29292985;
+    color: var(--font-lightcolor);
+    padding: 1.25rem 0rem 0.625rem 1.25rem;
+    position: relative;
+}
+
+
+.section ul {
+    list-style: disc;
+}
+
+.card-missao, .card-valores, .card-visao{
+    text-align: center;
+    height: 500px;
+}
+
+.card .body-dilema {
+    font-family: 'dmsans';
+    font-size: 6vh;
+    font-weight: bold;
+    color: var(--font-lightcolor);
+    padding: 1.25rem 0rem 0.625rem 1.25rem;
+    position: relative;
+}
+
+.columnL {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.buttonAdquira{
+    height: 3.125rem;
+    width: 20.375rem;
+    margin: 1.25rem 0rem 0rem 1.25rem;
+    color: var(--font-lightcolor);
+    border: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "gogh";
+    font-size: 1.733vh;
+    font-weight: bold;
+    border-radius: 1.125rem;
+    background: linear-gradient(145deg, var(--main-color), var(--accent-color));
+    box-shadow: 0.625rem 0.625rem 0.625rem 0rem #00000048;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-block;
+    position: relative;
+    align-self: center;
+}
+
+.columnL p {
+    margin-bottom: 50px;
+}
+
+.linha-vertical {
+    height: 800px;
+    /*Altura da linha*/
+    border-right: 2px solid;
+    /* Adiciona borda esquerda na div como ser fosse uma linha.*/
+}
+
+.columnR {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: start;
+}
+
+.columnR p {
+    margin-bottom: 50px;
+}
+
+.section {
+    text-align: justify;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    text-align: center;
+    border-bottom: solid var(--lines-color) 0.625rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid var(--lines-color) 0.625rem;
+}
+
+.act {
+    text-align: center;
+    padding: 40px;
+}
+
+#quokkinha {
+    width: 30%;
+}

@@ -33,6 +33,7 @@
 body {
   line-height: 1.5;
   font-family: 'Poppins', sans-serif;
+  background-color: rgba(217, 249, 217, 0.3)
 }
 
 nav {
@@ -112,11 +113,11 @@ nav {
   text-shadow: 0.063rem 0.188rem 0.625rem #29292985;
   color: var(--font-lightcolor);
   padding: 1.25rem 0rem 0.625rem 1.25rem;
-<<<<<<< HEAD
-=======
   position: relative;
+}
 
->>>>>>> 7083ba553346a749dc1e27397679c9e242cce0c1
+.elementor-video {
+  align-self: center;
 }
 
 .body-dilema {
@@ -125,10 +126,7 @@ nav {
   font-weight: bold;
   color: var(--font-lightcolor);
   padding: 1.25rem 0rem 0.625rem 1.25rem;
-<<<<<<< HEAD
-=======
   position: relative;
->>>>>>> 7083ba553346a749dc1e27397679c9e242cce0c1
 }
 
 .body-button-saibamais {
@@ -234,15 +232,8 @@ nav {
   /* Garante que o texto dentro do contêiner também esteja centralizado */
   padding: 3rem;
   background-image: url(../img/pequenosguerreiros3.jpg);
-<<<<<<< HEAD
-
 }
 
-=======
-}
-
-
->>>>>>> 7083ba553346a749dc1e27397679c9e242cce0c1
 .about h1 {
   text-align: center;
   font-family: 'gogh';
