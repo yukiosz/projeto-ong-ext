@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'gogh';
+    src: url(../fonts/gogh.woff);
+  }
+  
+  @font-face {
+    font-family: 'dmsans';
+    src: url(../fonts/dmsans.ttf);
+  }
+
+.top {
+    height: 40rem;
+    background-image: url(../img/pequenosguerreiros1.jpg);
+    border-bottom: solid var(--lines-color) 0.625rem;
+    background-size: cover;
+}
+
+.body-title {
+    font-family: 'gogh';
+    font-display: swap;
+    font-size: 10vh;
+    font-weight: bolder;
+    text-shadow: 0.063rem 0.188rem 0.625rem #29292985;
+    color: var(--font-lightcolor);
+    padding: 1.25rem 0rem 0.625rem 1.25rem;
+    position: relative;
+}
+
+
+.section ul {
+    list-style: disc;
+}
+
+.card-missao, .card-valores, .card-visao{
+    text-align: center;
+    height: 500px;
+}
+
+.card .body-dilema {
+    font-family: 'dmsans';
+    font-size: 6vh;
+    font-weight: bold;
+    color: var(--font-lightcolor);
+    padding: 1.25rem 0rem 0.625rem 1.25rem;
+    position: relative;
+}
+
+.buttonAdquira{
+    height: 3.125rem;
+    width: 10.375rem;
+    margin-top: 1.25rem;
+    color: var(--font-lightcolor);
+    border: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "gogh";
+    font-size: 1.733vh;
+    font-weight: bold;
+    border-radius: 1.125rem;
+    background: linear-gradient(145deg, var(--main-color), var(--accent-color));
+    box-shadow: 0.625rem 0.625rem 0.625rem 0rem #00000048;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-block;
+    position: relative;
+    align-self: center;
+}
+
+.buttonAdquira:hover{
+    height: 3.325rem;
+    width: 10.775rem;
+}
+
+.section {
+    font-family: 'dmsans';
+    text-align: justify;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.titleImg{
+    display: flex;
+    justify-content: center;
+}
+
+.intro{
+    text-align: center;
+    font-size: 25px;
+    border-bottom: solid var(--lines-color) 0.625rem;
+}
+
+.intro p{
+    padding-bottom: 40px;
+}
+
+h1{
+    font-family: 'gogh';
+}
+
+body{
+    font-family: 'dmsans';
+}
+
+.quokkinhaProd{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    border-bottom: solid var(--lines-color) 0.625rem;
+    padding-bottom: 50px;
+}
+
+.quokkinhaProd div{
+    padding: 30px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.preco{
+    align-self: center;
+}
+
+.products{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.produto{
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
