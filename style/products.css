@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'gogh';
     src: url(../fonts/gogh.woff);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: 'dmsans';
     src: url(../fonts/dmsans.ttf);
-  }
+}
 
 .top {
     height: 40rem;
@@ -31,7 +31,7 @@
     list-style: disc;
 }
 
-.card-missao, .card-valores, .card-visao{
+.card-missao, .card-valores, .card-visao {
     text-align: center;
     height: 500px;
 }
@@ -45,7 +45,7 @@
     position: relative;
 }
 
-.buttonAdquira{
+.buttonAdquira {
     height: 3.125rem;
     width: 10.375rem;
     margin-top: 1.25rem;
@@ -67,9 +67,8 @@
     align-self: center;
 }
 
-.buttonAdquira:hover{
-    height: 3.325rem;
-    width: 10.775rem;
+.buttonAdquira:hover {
+    transform: scale(1.05);
 }
 
 .section {
@@ -85,30 +84,30 @@
     font-size: 50px;
 }
 
-.titleImg{
+.titleImg {
     display: flex;
     justify-content: center;
 }
 
-.intro{
+.intro {
     text-align: center;
     font-size: 25px;
     border-bottom: solid var(--lines-color) 0.625rem;
 }
 
-.intro p{
+.intro p {
     padding-bottom: 40px;
 }
 
-h1{
+h1 {
     font-family: 'gogh';
 }
 
-body{
+body {
     font-family: 'dmsans';
 }
 
-.quokkinhaProd{
+.quokkinhaProd {
     display: flex;
     font-size: 20px;
     justify-content: center;
@@ -116,25 +115,25 @@ body{
     padding-bottom: 50px;
 }
 
-.quokkinhaProd div{
+.quokkinhaProd div {
     padding: 30px;
     text-align: justify;
     display: flex;
     flex-direction: column;
 }
 
-.preco{
+.preco {
     align-self: center;
 }
 
-.products{
+.products {
     justify-content: center;
     display: flex;
     flex-direction: row;
 
 }
 
-.produto{
+.produto {
     padding: 20px;
     width: 200px;
     display: flex;
@@ -142,4 +141,3 @@ body{
     justify-content: center;
     text-align: center;
 }
-
