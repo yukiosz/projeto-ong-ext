@@ -33,12 +33,16 @@
 
 body {
   line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'gogh', sans-serif;
   background-color: rgba(217, 249, 217, 0.3)
 }
 
 nav {
   background-color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -184,7 +188,7 @@ nav {
 }
 
 .card-missao, .card-visao, .card-valores {
-  min-height: 32rem;
+  min-height: 28rem;
   max-width: 25rem;
   border-radius: 2rem;
   background: linear-gradient(145deg, #f5f5f5, #e4e4e4);
@@ -192,6 +196,9 @@ nav {
     -0.75rem -0.75rem 1.5rem #ffffff;
   margin: 3.125rem 0rem 3.125rem 0rem;
   transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .card-missao:hover, .card-visao:hover, .card-valores:hover {

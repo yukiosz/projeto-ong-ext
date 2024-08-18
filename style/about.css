@@ -27,9 +27,12 @@
 }
 
 .card-missao, .card-valores, .card-visao {
-    text-align: center;
-    min-height: 30rem;
+    min-height: 28rem;
     max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .card .body-dilema {
@@ -39,6 +42,7 @@
     color: var(--font-lightcolor);
     padding: 1.25rem 0rem 0.625rem 1.25rem;
     position: relative;
+
 }
 
 .columnL {

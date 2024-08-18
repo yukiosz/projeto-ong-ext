@@ -26,23 +26,8 @@
     position: relative;
 }
 
-
 .section ul {
     list-style: disc;
-}
-
-.card-missao, .card-valores, .card-visao {
-    text-align: center;
-    height: 500px;
-}
-
-.card .body-dilema {
-    font-family: 'dmsans';
-    font-size: 6vh;
-    font-weight: bold;
-    color: var(--font-lightcolor);
-    padding: 1.25rem 0rem 0.625rem 1.25rem;
-    position: relative;
 }
 
 .buttonAdquira {
@@ -59,7 +44,7 @@
     font-weight: bold;
     border-radius: 1.125rem;
     background: linear-gradient(145deg, var(--main-color), var(--accent-color));
-    box-shadow: 0.625rem 0.625rem 0.625rem 0rem #00000048;
+    box-shadow: 0.5rem 0.5rem 0.75rem 0rem #00000041;
     cursor: pointer;
     transition: all 0.3s;
     display: inline-block;
@@ -100,7 +85,8 @@
 }
 
 h1 {
-    font-family: 'gogh';
+    font-family: 'dmsans';
+    padding: 20px;
 }
 
 body {
