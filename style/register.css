@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.1);
+    max-width: 50rem;
+}
+
+h1 {
+    color: #284775;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    color: #333333;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 40rem; /* Define uma largura máxima para o texto */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+    text-align: justify; /* Opcional: justifica o texto */
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    background-color: #d93f57;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b83147;
+}
