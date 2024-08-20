@@ -34,7 +34,8 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    align-self: flex-start;
+    align-self: flex-end;
+    height: 47px;    
 }
 
 .event-inputs button:hover {
